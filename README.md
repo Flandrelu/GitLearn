@@ -99,5 +99,14 @@ Fast-forward
  1 file changed, 83 insertions(+)
  create mode 100644 README.md
 ```
-
-> 这里需要注意一点就是
+> 这里需要注意一点就是合并只是针对子分支向父分支合并，如果在父分支上面做的修改会自动同步到子分支上面，不需要我们手动去进行分支合并
+```git
+# 列出本地所有分支
+git branch
+# 列出所有远程分支
+git branch -r
+# 列出本地和远程所有分支
+git branch -a
+# 删除某个分支
+git branch -d [branch name]
+```
