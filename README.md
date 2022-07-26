@@ -81,3 +81,23 @@ git restore [file]
 ```
 > 如果已经将一个文件添加到了缓存区，但是尚未提交，这时候又在工作区对这个文件做了修改，如果想丢弃工作区的这一部分修改，继续使用缓存区的文件内容，可以使用restore,如果相连缓存里面的文件内容都不要了，那么可以使用restore --staged
 
+#### 8.git分支
+```git
+git branch [branch name] && git switch [branch name]
+```
+> 当然创建分支的命令不唯一，因为我脑子不太好使所以我喜欢用简单的所以我就用了
+> 如果想要合并一个分支到另一个分支需要用下面的命令
+> 这里为了直观我直接使用实际的分支示例：将bugfix分支合并到dev，当然这个合并的前提就是bugfix要比dev新
+```git
+# 首先进入到dev分支下面
+git switch dev
+# 进行合并操作
+git merge bugfix
+更新 bc5ed84..82f120b
+Fast-forward
+ README.md | 83 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 83 insertions(+)
+ create mode 100644 README.md
+```
+
+> 这里需要注意一点就是
