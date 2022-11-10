@@ -2,6 +2,15 @@
 
 > 用来进行一些git常用命令的练习
 
+#### git 查看配置
+git config -l
+
+查看系统配置
+git config --system --list
+查看当前用户配置
+git config --global --list
+
+
 #### 1.git仓库初始化
 ```git
  git init [directory]
