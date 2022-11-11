@@ -15,7 +15,8 @@ git config --global --list
 ```
 
 设置配置值
-```git config user.name "qian.chao"
+```
+git config user.name "qian.chao"
 git config user.email "qian.chao@hellogroup.com"
 ```
 
