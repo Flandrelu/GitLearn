@@ -10,6 +10,9 @@ git config --system --list
 查看当前用户配置
 git config --global --list
 
+设置配置值
+git config user.name "qian.chao"
+git config user.email "qian.chao@hellogroup.com"
 
 #### 1.git仓库初始化
 ```git
