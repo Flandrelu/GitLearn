@@ -6,10 +6,12 @@
 git config -l
 
 查看系统配置
-```git config --system --list
+```
+git config --system --list
 ```
 查看当前用户配置
-```git config --global --list
+```
+git config --global --list
 ```
 
 设置配置值
